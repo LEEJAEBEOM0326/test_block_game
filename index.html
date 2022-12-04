@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #results .content, #instructions .content{
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .txt { font-size: 54px; }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+</head>
+<body>
+    <div id="instructions">
+        <div class="content">
+          <p>블록을 서로 쌓으십시오.</p>
+          <p>블록이 스택 위에 있을 때 클릭, 탭 또는 스페이스바를 누릅니다. 파란색 블록까지 도달하세요.</p>
+          <p>게임을 시작하려면 클릭하거나 탭하거나 스페이스바를 누르세요.</p>
+        </div>
+    </div>
+    <div id="results">
+        <div class="content">
+          <p class="txt">지나 실패!!!ㅋㅋ</p>
+          <br><br>
+          <p>다시 시작 하려면 'R' 눌러주세요.</p>
+        </div>
+    </div>
+    <div id="score">0</div>
+    <script src="./common.js"></script>
+</body>
+</html>
